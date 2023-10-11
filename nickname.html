@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nicknametest</title>
+</head>
+
+<body>
+    <form onsubmit="aoooba()">
+        <label for="nome">Nome: </label>
+        <input type="text" name="" id="nome">
+
+        <label for="nickname">Nickname: </label>
+        <input type="nickname" name="" id="nickname">
+
+
+        <button>aoooooba</button>
+
+        <span id="opa"></span>
+    </form>
+
+    <script>
+        function aoooba() {
+            event.preventDefault();     
+
+
+            let nome = document.getElementById("nome").value;
+            let nickname = document.getElementById("nickname").value;
+
+
+            let rep = nome.replace(nome, nickname);
+
+            document.getElementById('opa').innerText = `Olá, ${rep}`
+
+
+
+            // alert(`Ola, ${rep}`)
+        }
+    </script>
+</body>
+
+</html>
